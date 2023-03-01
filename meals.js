@@ -12,6 +12,10 @@ const loadMeals = async (searchItem) => {
 };
 
 const displayMeals = (meals) => {
+  document.querySelector(
+    ".container h1"
+  ).innerHTML = `<h1 class="text-center text-primary fw-bold mt-4 mb-5">Take Your Favourite Meal</h1>`;
+
   const mealsContainer = document.getElementById("meals-container");
   mealsContainer.innerHTML = "";
 
